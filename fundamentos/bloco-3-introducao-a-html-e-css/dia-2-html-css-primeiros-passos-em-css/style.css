@@ -1,0 +1,19 @@
+h1 {color:rgb(255, 166, 0); 
+    font-size: 60px; 
+    font-family: sans-serif;
+    background-color: rgb(245, 211, 148);
+    text-align: center;}
+.cor-Pul{color: rgb(122, 0, 122);
+    background-color:}
+p{font-weight: 600;
+    font-size: 3em;
+    text-align: center;}
+body{font-size: 16px;}
+ul{ font-style: italic;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2em;}
+#amarelo{ background-color: rgb(255, 255, 7);}
+#vermelho{ background-color: red;}
+#marrom{background-color: saddlebrown;}
