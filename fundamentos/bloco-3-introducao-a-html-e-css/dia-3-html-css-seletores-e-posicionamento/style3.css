@@ -1,0 +1,22 @@
+
+#sessão{
+  text-align: center;
+  
+  
+}
+#listO{
+  max-width: 50%;
+  list-style: none;
+  margin: auto;
+}
+li:hover{
+  background-color: rgb(102, 102, 202);
+}
+li :active{
+  background-color: rgb(255, 255, 255);
+  font-family: cursive;
+}
+a{
+  text-decoration: none;
+  font-family: monospace;
+}
