@@ -108,8 +108,8 @@ switch(peça){
     break;
  
 }
- */
-
+ 
+// Atividade 7.
  const nota = 40;
 
  if( nota < 0 && nota > 100){
@@ -135,3 +135,25 @@ else if(nota >= 50){
  }
 
 
+// Exercicio 8.
+const i1 = 2
+const i2 = 3
+const i3 = 1
+
+let par = false;
+
+if( i1 % 2 == 0 || i2 % 2  == 0 || i3 % 2 == 0){
+  par = true;
+}
+console.log(par);
+*/
+const i1 = 2
+const i2 = 4
+const i3 = 5
+
+let impar = false;
+
+if( i1 %2 !== 0 || i2 %2 !== 0 || i3 % 2 !== 0){
+  impar = true;
+}
+console.log(impar);
