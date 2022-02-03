@@ -161,3 +161,16 @@ console.log(impar);
 
 
 //exercicio 10
+const custo = 2;
+const valorDeVenda = 10;
+
+if( custo >=0 && valorDeVenda >=0){
+  const valortotal = custo * 1.2;
+  const lucro = (valorDeVenda - valortotal ) *1000 ;
+  console.log(lucro);
+} else{
+  console.log('valor negativo');
+}
+
+
+
