@@ -1,4 +1,4 @@
-/*
+
 // Exercicio 1
 const a = 20;
 const b = 30;
@@ -146,7 +146,8 @@ if( i1 % 2 == 0 || i2 % 2  == 0 || i3 % 2 == 0){
   par = true;
 }
 console.log(par);
-*/
+
+// Exercicio 9.
 const i1 = 2
 const i2 = 4
 const i3 = 5
@@ -157,3 +158,6 @@ if( i1 %2 !== 0 || i2 %2 !== 0 || i3 % 2 !== 0){
   impar = true;
 }
 console.log(impar);
+
+
+//exercicio 10
