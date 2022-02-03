@@ -88,8 +88,8 @@ else if(weekDay == 'sabado'){
 }
 else if(weekDay == 'domingo'){
   console.log('descanso 2')
-}*/
-
+}
+// atividade usando OR ||
 let weekDay = 'domingo';
 
 if(weekDay === 'segunda feira' || weekDay === 'terça feira' || weekDay === 'quarta feira' || weekDay === 'quinta feira' || weekDay === 'sexta feira'){
@@ -97,3 +97,17 @@ if(weekDay === 'segunda feira' || weekDay === 'terça feira' || weekDay === 'qua
 }else{
   console.log('descanso')
 }
+
+
+// Operador NOT !
+const squirtle = "melhor pokemon inicial";
+
+console.log(!squirtle); // false
+
+console.log(!42); // false
+
+console.log(!0); // true
+// O número 0 tem o valor "falsy" no javascript. Logo, seu oposto é true.
+*/
+
+
