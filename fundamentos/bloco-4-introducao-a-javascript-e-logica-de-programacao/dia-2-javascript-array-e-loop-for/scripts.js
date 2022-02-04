@@ -136,3 +136,95 @@ for (let nomes of names){
 
 }
 //
+
+// Exercicios dia 4.2
+// Exercicio 1
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let index=0;
+
+for( index = 0; index <numbers.length  ; index +=1){
+  console.log(numbers[index]);
+  // Resultado : 5
+  // 9
+  // 3
+  // 19
+  // 70
+  // 8
+  // 100
+  // 2
+  // 35
+  // 27
+}
+// Exercicio 2
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let resultado=0;
+
+for( index = 0; index < numbers.length  ; index +=1){
+  resultado += numbers[index];
+}
+console.log(resultado);
+// Resultado: 278
+
+//Exercicio 3
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let resultado=0;
+
+for( index = 0; index < numbers.length  ; index +=1){
+  resultado += numbers[index]/9;
+}
+console.log(resultado);
+
+// Exercicio 4
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let resultado=0;
+
+for( index = 0; index < numbers.length  ; index +=1){
+  resultado += numbers[index]/9;
+}
+if (resultado > 20){
+  console.log('valor maior que 20');
+}else{
+  console.log('valor menor ou igual a 20');
+}
+console.log(resultado);
+
+
+// Exercicio 5
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let maiorValor = 0;
+
+for (index =0 ; index < numbers.length; index +=1){
+  if(numbers[index] > maiorValor){
+    maiorValor = numbers[index];
+  }
+}
+console.log(maiorValor);
+
+
+// Exercicio 6
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let impar =0 ;
+
+for(index=0; index < numbers.length; index +=1){
+  if(numbers [index]%2 == 1){
+    impar +=1;
+  }
+}
+if( impar ===0){
+  console.log('nenhum valor encontrado');
+}else{
+  console.log(impar);
+}
+
+
+// Exercicio 7
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let menorValor = numbers[0];
+
+for (index =0 ; index < numbers.length; index +=1){
+  if(numbers[index] < menorValor){
+    menorValor = numbers[index];
+  }
+}
+console.log(menorValor);
