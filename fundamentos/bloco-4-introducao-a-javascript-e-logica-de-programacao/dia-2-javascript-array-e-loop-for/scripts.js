@@ -230,7 +230,7 @@ for (index =0 ; index < numbers.length; index +=1){
 console.log(menorValor);
 
 
-// Exercicio 8
+// Exercicio 8 e 9
 let array = []
 
 for( i=0; i <=25; i+=1){
