@@ -228,3 +228,13 @@ for (index =0 ; index < numbers.length; index +=1){
   }
 }
 console.log(menorValor);
+
+
+// Exercicio 8
+let array = []
+
+for( i=0; i <=25; i+=1){
+  array.push(i);
+console.log(array[i]/2);
+}
+console.log(array);
