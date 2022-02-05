@@ -203,17 +203,17 @@ console.log(maiorValor);
 
 // Exercicio 6
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let impar =0 ;
+let result =0 ;
 
 for(index=0; index < numbers.length; index +=1){
   if(numbers [index]%2 == 1){
-    impar +=1;
+    result +=1;
   }
 }
 if( impar ===0){
   console.log('nenhum valor encontrado');
 }else{
-  console.log(impar);
+  console.log(result);
 }
 
 
@@ -238,3 +238,5 @@ for( i=0; i <=25; i+=1){
 console.log(array[i]/2);
 }
 console.log(array);
+
+
