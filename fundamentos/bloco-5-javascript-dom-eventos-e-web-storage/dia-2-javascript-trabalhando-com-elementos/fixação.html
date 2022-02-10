@@ -1,0 +1,32 @@
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+  <script>
+
+
+  let pai = document.querySelector('#elementoOndeVoceEsta').parentNode;
+
+    pai.style.color ='red'
+
+  let primeiro = document.querySelector('#primeiroFilhoDoFilho');
+
+    primeiro.innerText = 'primeiro texto adicionado';
+
+  let primeiroFilho = document.querySelector('#pai').firstChild
+
+  let atencao = document.querySelector('#elementoOndeVoceEsta').nextSibling
+
+  let terceirofillho = document.querySelector('#elementoOndeVoceEsta').nextElementSibling
+
+  let  terceiro_Pai = document.querySelector('#pai').lastElementChild.previousElementSibling;
+
+   </script>
+</main>
