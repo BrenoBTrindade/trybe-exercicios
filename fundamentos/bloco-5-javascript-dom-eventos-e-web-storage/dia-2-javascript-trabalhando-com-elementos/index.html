@@ -61,6 +61,7 @@
       let pai = document.body;
       let filho = document.createElement('h1')
       filho.innerText = 'Exerciçio 5.2'
+      filho.className = 'title'
        pai.appendChild(filho);
 
       // 2 Adicione a tag main com a classe main-content como filho da tag body ;
@@ -101,7 +102,7 @@
       sessao2.appendChild(img1)
 
 
-      // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      //8 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
       let lista1 = document.createElement('ul')
       sessao3.appendChild(lista1);
 
@@ -113,17 +114,33 @@
       }
 
 
-      // Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+      // 9 Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
 
       for(indice = 0; indice < 3; indice +=1){
         let h3creater = document.createElement('h3')
         h3creater.innerText = 'Criados'
+        h3creater.className = 'description'
 
         main1.appendChild(h3creater)
       }
 
+      // Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
 
+      //fiz pelo console do navegador
 
+      // Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
+
+      sessao3.style.margin = 'auto';
+
+    //       Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+    let cor = document.getElementsByClassName('center-content')[0]
+    cor.style.background = 'green'
+    
+
+    // Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+    lista1.lastChild.remove()
+    
+    
 
     
     </script>
