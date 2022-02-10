@@ -57,24 +57,71 @@
   </head>
   <body>
     <script>
-      //  Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ; 
+      // 1 Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ; 
       let pai = document.body;
       let filho = document.createElement('h1')
       filho.innerText = 'Exerciçio 5.2'
        pai.appendChild(filho);
 
-      //  Adicione a tag main com a classe main-content como filho da tag body ;
+      // 2 Adicione a tag main com a classe main-content como filho da tag body ;
       let main1 = document.createElement('main')
       main1.className ='main-content'
       pai.appendChild(main1);
       
-      // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+      //3 Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
       let sessao = document.createElement('section');
       sessao.className = 'center-content';
       main1.appendChild(sessao)
 
 
-      // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+      //  4 Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+      let paragrafo = document.createElement('p');
+      paragrafo.innerText = 'Algum texto';
+      sessao.appendChild(paragrafo);
+
+      //   5   Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+
+      let sessao2 = document.createElement('section');
+      sessao2.className = 'left-content';
+      main1.appendChild(sessao2)
+
+
+      //6 Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+
+      let sessao3 = document.createElement('section');
+      sessao3.className = 'right-content';
+      main1.appendChild(sessao3)
+
+
+      // 7Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+      let img1 = document.createElement('img');
+      img1.className = 'small-image'
+      img1.setAttribute('src', 'https://picsum.photos/200')
+
+      sessao2.appendChild(img1)
+
+
+      // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      let lista1 = document.createElement('ul')
+      sessao3.appendChild(lista1);
+
+      let arrayLista1 = [ 'um', 'dois', 'tres', 'quatro', 'cinco' , 'seis'];
+      for(let index in arrayLista1){
+        let listas = document.createElement('li');
+        listas.innerHTML = arrayLista1[index];
+        lista1.appendChild(listas);
+      }
+
+
+      // Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+
+      for(indice = 0; indice < 3; indice +=1){
+        let h3creater = document.createElement('h3')
+        h3creater.innerText = 'Criados'
+
+        main1.appendChild(h3creater)
+      }
+
 
 
 
