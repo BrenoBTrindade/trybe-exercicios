@@ -24,13 +24,13 @@ function daysOfMonth(){
     let day = dezDaysList[i];
     let dayListItem = document.createElement('li');
 
-    if(day === 24 && day === 31 ){
+    if(day === 24 || day === 31 ){
       dayListItem.className = 'day holiday';
       dayListItem.innerHTML = day;
       listDays.appendChild(dayListItem)
 
     }
-    else if ( day === 4 && day ===11 && day ===18){
+    else if ( day === 4 || day ===11|| day ===18){
       dayListItem.className = 'day friday';
       dayListItem.innerHTML = day;
       listDays.appendChild(dayListItem);
@@ -47,5 +47,48 @@ function daysOfMonth(){
     }
 }
 }
-
 daysOfMonth();
+
+function holidayButton(buttonName){
+  let buttonF = document.querySelector('.buttons-container');
+  let buttonHoliday = document.createElement('button');
+  let buttonId = 'btn-holiday' ;
+
+  buttonHoliday.innerHTML = buttonName;
+  buttonHoliday.id = buttonId;
+  buttonF.appendChild(buttonHoliday);
+
+};//Concluido com ajuda do gabarito.
+holidayButton('feriados');
+
+function displayHolidays() {
+  let getHolidayButton = document.querySelector('#btn-holiday');
+  let getHolidays = document.querySelectorAll('.holiday')
+  let backgroundColor = 'rgb(238,238,238)';
+  let setNewColor = 'purple';
+
+  getHolidayButton.addEventListener('click', function() {
+    for (let index = 0; index < getHolidays.length; index += 1) {
+      if (getHolidays[index].style.backgroundColor === setNewColor) {
+        getHolidays[index].style.backgroundColor = backgroundColor;
+      } else {
+        getHolidays[index].style.backgroundColor = setNewColor;
+      }
+    }
+  })
+};
+
+
+displayHolidays();
+
+function fridayButton(buttonName){
+    let buttonS = document.querySelector('.buttons-container');
+    let buttonFriday = document.createElement('button');
+    let buttonId = 'btn-friday';
+  
+    buttonFriday.innerHTML = buttonName;
+    buttonFriday.id = buttonId;
+    buttonS.appendChild(buttonFriday);
+  }
+  
+  fridayButton('Sexta-Feira');
