@@ -1,88 +1,16 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body{
-  color: rgb(77, 78, 80);
-  background-color: rgb(140, 255, 188);
-  font-family:  Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-
-}
-header{
-  background-color: rgb(255, 255, 255);
-  border: solid rgb(118, 226, 181) 1px;
-  text-align: center;
-  border-radius: 5px;
-  width: 80%;
-  margin: 40px auto;
-  padding: 20px;
-}
-header h1{
-margin-bottom: 20px;
-background-color: rgb(255, 255, 255);
-padding: 5px;
-border-radius: 5px;
-font-size: 50px;
-color: rgb(77, 201, 160);
-}
-.edited{
-  padding: 5px;
-  width: 250px;
+  background-color: rgb(201, 245, 228);
   font-size: 18px;
 }
-div{
-  width: 80%;
-  text-align: center;
-  padding: 20px;
-  margin: 10px auto 10px auto;
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  border: solid rgb(118, 226, 181) 1px;
-  
+.container{
+  margin-bottom: 20px;
+ 
 }
-button{
-  text-align: center;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: rgb(127, 251, 255);
-  cursor: pointer;
-}
-button:hover{
+h1{
   background-color: white;
-}
-#button{
-background-color: transparent;
-border: transparent;
-}
-textarea{
-  width: 100%;
-  margin-top: 15px;
-  resize: none;
-}
-#data{
-  padding: 2px;
-  width: 200px;
-  display: block;
-  margin: 10px auto 10px auto;
-  background-color:aquamarine;
-}
-#viagem{
-  padding: 10px;
-  width: 200px;
-  display: block;
-  margin: 10px auto 10px auto;
-  background-color:aquamarine;
-  font-size: 20px;
-}
-#checkbox  {
- width: 40%;
- text-align: justify;
- background-color: transparent;
- border: transparent;
- font-size: 18px;
- font-weight: bold;
+  border-radius: 8px;
+  border: solid rgb(191, 240, 211) 1px;
+  box-shadow: black;
+  color: rgba(88, 214, 88, 0.856);
+  padding: 5px;
 }
