@@ -70,10 +70,13 @@ figcaption {
     margin: 10px;
     max-width: 80%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap ;
-  }
+    justify-content: center;
 }
