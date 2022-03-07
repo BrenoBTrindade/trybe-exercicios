@@ -13,6 +13,7 @@
 // testingScope(true);
 
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
 const sorted = oddsAndEvens.sort((a,b) => {
   if(a < b) return -1;
   if(a > b) return 1;
@@ -32,8 +33,19 @@ const fatorial = (x) => {
   }
 }
 
-let num = 0;
+let num = 4;
  if(num > 0){
    let resultado = fatorial(num);
    console.log(resultado);
  }
+ 
+
+
+ const starships = {
+  option1: "Tardis",
+  option2: "Millennium Falcon",
+  option3: "Enterprise",
+  option4: "Heart of Gold"
+}
+
+Object.values(starships);
