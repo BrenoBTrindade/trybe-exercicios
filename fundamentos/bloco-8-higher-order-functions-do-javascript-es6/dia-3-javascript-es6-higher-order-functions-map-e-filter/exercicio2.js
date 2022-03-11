@@ -91,6 +91,20 @@ const books = [
 //   },
 // ];
 
-function nameAndAge() {
-  // escreva seu código aqui
+function nameAndAge(array) {
+  const getAge = array.map((itemDoArray) => {
+    const realeseYear = itemDoArray.releaseYear - itemDoArray.author.birthYear;
+    const author = itemDoArray.author.name;
+    const obj = {
+      age : realeseYear,
+      author : author,
+    };
+    return obj;
+  })
+  
+  const result =  getAge.sort((a, b) => a.age-b.age);
+  return result;
 }
+
+console.log(nameAndAge(books));
+
