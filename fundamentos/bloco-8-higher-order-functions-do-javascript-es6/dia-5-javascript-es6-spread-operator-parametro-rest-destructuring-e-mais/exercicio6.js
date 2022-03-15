@@ -6,3 +6,12 @@ const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
 const chiron = ['Chiron', 'Bugatti', 2016];
 
 // escreva toObject abaixo
+const toObject = ([carName, brand, releaseYear]) => {
+  const newObj = {
+    carName,
+    brand,
+    releaseYear,
+  };
+  return newObj;
+}
+console.log(toObject(palio));

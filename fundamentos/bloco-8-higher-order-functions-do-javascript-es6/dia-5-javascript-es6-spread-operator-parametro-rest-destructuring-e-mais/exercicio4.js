@@ -33,6 +33,4 @@ const people = [
 
 const filterPeople = (array) => array.filter(({bornIn, nationality}) => nationality === 'Australian' && bornIn <= 2000);
 
-
-
 console.log(filterPeople(people));
