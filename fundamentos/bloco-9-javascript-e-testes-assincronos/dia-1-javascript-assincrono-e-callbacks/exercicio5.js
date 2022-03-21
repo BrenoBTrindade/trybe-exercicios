@@ -15,9 +15,8 @@ const greet = (temperature) =>
 
 // definição da função sendMarsTemperature...
 
-const sendMarsTemperature = (callback) => {
+const sendMarsTemperature = (...callback) => {
   return callback;
  }
 
-sendMarsTemperature(temperatureInFahrenheit(getMarsTemperature())); // imprime "It is currently 47ºF at Mars", por exemplo
-sendMarsTemperature(greet(getMarsTemperature())); // imprime "Hi there! Curiosity here. Right now is 53ºC at Mars", por exemplo
+sendMarsTemperature(temperatureInFahrenheit(getMarsTemperature()), greet(getMarsTemperature())); // imprime "It is currently 47ºF at Mars", por exemplo
