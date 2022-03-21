@@ -13,10 +13,13 @@ const temperatureInFahrenheit = (temperature) =>
 const greet = (temperature) =>
   console.log(`Hi there! Curiosity here. Right now is ${temperature}ºC at Mars`);
 
+const handleError = (errorReason) =>
+  console.log(`Error getting temperature: ${errorReason}`);  
+
 // definição da função sendMarsTemperature...
 
 const sendMarsTemperature = (...callback) => {
   return callback;
  }
 
-sendMarsTemperature(temperatureInFahrenheit(getMarsTemperature()), greet(getMarsTemperature())); // imprime "It is currently 47ºF at Mars", por exemplo
+sendMarsTemperature(temperatureInFahrenheit(getMarsTemperature()), greet(getMarsTemperature()), handleError('Bug')); // imprime "It is currently 47ºF at Mars", por exemplo
