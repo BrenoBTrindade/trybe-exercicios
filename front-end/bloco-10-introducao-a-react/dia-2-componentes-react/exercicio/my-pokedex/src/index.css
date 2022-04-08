@@ -13,7 +13,7 @@ body {
   color: rgb(0, 0, 0);
   background-color: rgb(26, 125, 238);
   margin: auto;
-  width: 500px;
+  width: 700px;
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgb(58, 57, 57);
   padding: 10px;
@@ -31,10 +31,33 @@ body {
   border-radius: 10px;
   box-shadow: 10px 5px 5px rgb(58, 57, 57);
   background-color: aqua;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 50px;
 }
 
 .pokedex {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   margin: 10px 10px;
+}
+
+.button-text {
+  background-color: rgb(172, 76, 228);
+  color: black;
+  font-size: 15px;
+  font-weight: 598;
+  text-align: center;
+  width: 100px;
+  padding: 20px;
+  align-self: center;
+  margin: 10px;
+  box-shadow: 8px 3px 3px rgb(58, 57, 57);
+  border-radius: 5px;
+}
+
+.filter-button  button :hover{
+ background-color: aqua;
 }
